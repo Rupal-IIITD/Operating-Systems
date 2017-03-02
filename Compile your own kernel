@@ -4,29 +4,17 @@ Kernel Version: 4.10.0-rc6+
 
  Firstly I installed Virtual box from internet.
 
- Then I loaded Ubuntu 16.04 iso image into that virtual box to install Ubuntu
-
-operating system into it.
+ Then I loaded Ubuntu 16.04 iso image into that virtual box to install Ubuntu operating system into it.
 
  Then, I ran these following commands:
 
- sudo apt-get install libncurses5-dev gcc make git
+ sudo apt-get install libncurses5-dev gcc make git exuberant-ctags bc libssl-dev
 
-exuberant-ctags bc libssl-dev
-
- git clone
-
-git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-
-
-stable.git
+ git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
 
  cd linux-stable
 
- git clone
-
-git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linu
-
-x.git
+ git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
 
  cd linux
 
@@ -48,8 +36,6 @@ x.git
 
  While restarting, I kept shift button pressed.
 
- And finally I got to the grub menu which shows me all the options through
-
-which I can log into my system.
+ And finally I got to the grub menu which shows me all the options through which I can log into my system.
 
  I chose 4.10.0-rc6+ to log into the my kernel.
