@@ -1,0 +1,55 @@
+Kernel Version: 4.10.0-rc6+
+
+2. The steps I followed while compiling the latest kernel are as follows:
+
+ Firstly I installed Virtual box from internet.
+
+ Then I loaded Ubuntu 16.04 iso image into that virtual box to install Ubuntu
+
+operating system into it.
+
+ Then, I ran these following commands:
+
+ sudo apt-get install libncurses5-dev gcc make git
+
+exuberant-ctags bc libssl-dev
+
+ git clone
+
+git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-
+
+stable.git
+
+ cd linux-stable
+
+ git clone
+
+git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linu
+
+x.git
+
+ cd linux
+
+ cp /boot/config-`uname -r`* .config
+
+ make defconfig
+
+ make
+
+ make -j4
+
+ sudo make modules_install install
+
+ sudo update-grub2
+
+ reboot
+
+ Then my virtual system restarts.
+
+ While restarting, I kept shift button pressed.
+
+ And finally I got to the grub menu which shows me all the options through
+
+which I can log into my system.
+
+ I chose 4.10.0-rc6+ to log into the my kernel.
